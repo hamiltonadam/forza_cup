@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Available Cups</h2>
+<ul>
+    {% for cup in cups %}
+    <li>
+        <strong>{{ cup.name }}</strong>
+        — <a href="{{ url_for('add_race', cup_id=cup.id) }}">Add Race</a>
+        — <a href="{{ url_for('view_standings', cup_id=cup.id) }}">View Standings</a>
+    </li>
+    {% else %}
+    <li>No cups yet. <a href="{{ url_for('create_cup') }}">Create one</a>.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

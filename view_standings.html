@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ cup.name }} — Standings</h2>
+
+{% if standings %}
+<table>
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Racer</th>
+            <th>Total Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i, racer in enumerate(standings, start=1) %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ racer.name }}</td>
+            <td>{{ racer.points }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No races have been added to this cup yet.</p>
+{% endif %}
+{% endblock %}

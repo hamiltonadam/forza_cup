@@ -1,0 +1,35 @@
+TRACKS = [
+    # Real-world Circuits
+    "Circuit de Barcelona-Catalunya (Spain)",
+    "Circuit de Spa-Francorchamps (Belgium)",
+    "Homestead-Miami Speedway (USA)",
+    "Indianapolis Motor Speedway (USA)",
+    "Kyalami Grand Prix Circuit (South Africa)",
+    "Le Mans - Circuit International de la Sarthe (France)",
+    "Lime Rock Park (USA)",
+    "Mid-Ohio Sports Car Course (USA)",
+    "Mugello Circuit (Italy)",
+    "Nürburgring Grand Prix Circuit (Germany)",
+    "Road America (USA)",
+    "Silverstone Circuit (UK)",
+    "Suzuka Circuit (Japan)",
+    "Virginia International Raceway (USA)",
+    "Watkins Glen International (USA)",
+    "WeatherTech Raceway Laguna Seca (USA)",
+    "Yas Marina Circuit (UAE)",
+    "Hockenheimring (Germany)",
+    "Daytona International Speedway (USA)",
+    "Nürburgring Nordschleife (Germany)",
+    "Brands Hatch (UK)",
+    "Sebring International Raceway (USA)",
+    "Michelin Raceway Road Atlanta (USA)",
+    "Mount Panorama Circuit Bathurst (Australia)",
+
+    # Fictional Circuits
+    "Eaglerock Speedway",
+    "Grand Oak Raceway",
+    "Hakone Circuit",
+    "Maple Valley",
+    "Sunset Peninsula Raceway",
+    "Fujimi Kaido"
+]

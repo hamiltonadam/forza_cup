@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add Race to {{ cup.name }}</h2>
+
+<form action="{{ url_for('add_race', cup_id=cup.id) }}" method="post">
+    <label for="track">Select Track:</label>
+    <select name="track" id="track">
+        {% for track in tracks %}
+        <option value="{{ track }}">{{ track }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="user_name">Your Racer Name:</label>
+    <input type="text" name="user_name" id="user_name" required>
+
+    <label for="user_time">Your Finish Time (seconds):</label>
+    <input type="number" step="0.001" name="user_time" id="user_time" required>
+
+    <label for="user_position">Your Finish Position:</label>
+    <input type="number" name="user_position" id="user_position" min="1" max="16" required>
+
+    <button type="submit">Submit Race</button>
+</form>
+{% endblock %}

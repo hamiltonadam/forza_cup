@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Create a New Cup</h2>
+<form action="{{ url_for('create_cup') }}" method="post">
+    <label for="cup_name">Cup Name:</label>
+    <input type="text" name="cup_name" id="cup_name" required>
+    <button type="submit">Create Cup</button>
+</form>
+{% endblock %}
